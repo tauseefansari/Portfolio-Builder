@@ -11,25 +11,39 @@ const Footer: FC = () => {
       </Link>
       <ul className="permalinks">
         <li>
-          <a href="#home">Home</a>
+          <Link smooth to="home">
+            Home
+          </Link>
         </li>
         <li>
-          <a href="#about">About</a>
+          <Link smooth to="about">
+            About
+          </Link>
         </li>
         <li>
-          <a href="#experience">Experience</a>
+          <Link smooth to="experience">
+            Experience
+          </Link>
         </li>
         <li>
-          <a href="#services">Services</a>
+          <Link smooth to="services">
+            Services
+          </Link>
         </li>
         <li>
-          <a href="#portfolio">Portfolio</a>
+          <Link smooth to="portfolio">
+            Portfolio
+          </Link>
         </li>
         <li>
-          <a href="#testimonials">Testimonials</a>
+          <Link smooth to="testimonials">
+            Testimonials
+          </Link>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <Link smooth to="contact">
+            Contact
+          </Link>
         </li>
       </ul>
       <div className="footer__socials">
