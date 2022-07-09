@@ -1,8 +1,9 @@
 import { FC } from 'react';
 import CTA from './CTA';
 import ME from '../../assets/me.png';
-import './Header.css';
 import HeaderSocial from './HeaderSocial';
+import { Link } from 'react-scroll';
+import './Header.css';
 
 const Header: FC = () => {
   return (
@@ -16,9 +17,9 @@ const Header: FC = () => {
         <div className="personal">
           <img src={ME} alt="Personal" />
         </div>
-        <a href="#contact" className="scroll__down">
+        <Link smooth to="contact" className="scroll__down">
           Scroll Down
-        </a>
+        </Link>
       </div>
     </header>
   );

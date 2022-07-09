@@ -1,67 +1,36 @@
-import { FC, MouseEventHandler, useState } from 'react';
+import { FC } from 'react';
 import { AiOutlineHome, AiOutlineUser } from 'react-icons/ai';
 import { BiBook, BiMessageSquareDetail } from 'react-icons/bi';
 import { HiOutlineBriefcase } from 'react-icons/hi';
 import { RiServiceLine } from 'react-icons/ri';
+import { FiUsers } from 'react-icons/fi';
+import { Link } from 'react-scroll';
 import './Navigation.css';
 
 const Navigation: FC = () => {
-  const [activeNav, setActiveNav] = useState<string | null>('#home');
-
-  const handleNavigation: MouseEventHandler<HTMLAnchorElement> = (e) => {
-    setActiveNav(e.currentTarget.getAttribute('href'));
-  };
-
   return (
     <nav>
-      <a
-        href="#home"
-        className={activeNav === '#home' ? 'active' : ''}
-        rel="noreferrer"
-        onClick={handleNavigation}
-      >
+      <Link activeClass="active" smooth spy to="home">
         <AiOutlineHome />
-      </a>
-      <a
-        href="#about"
-        className={activeNav === '#about' ? 'active' : ''}
-        rel="noreferrer"
-        onClick={handleNavigation}
-      >
+      </Link>
+      <Link activeClass="active" smooth spy to="about">
         <AiOutlineUser />
-      </a>
-      <a
-        href="#experience"
-        className={activeNav === '#experience' ? 'active' : ''}
-        rel="noreferrer"
-        onClick={handleNavigation}
-      >
+      </Link>
+      <Link activeClass="active" smooth spy to="experience">
         <BiBook />
-      </a>
-      <a
-        href="#services"
-        className={activeNav === '#services' ? 'active' : ''}
-        rel="noreferrer"
-        onClick={handleNavigation}
-      >
+      </Link>
+      <Link activeClass="active" smooth spy to="services">
         <RiServiceLine />
-      </a>
-      <a
-        href="#portfolio"
-        className={activeNav === '#portfolio' ? 'active' : ''}
-        rel="noreferrer"
-        onClick={handleNavigation}
-      >
+      </Link>
+      <Link activeClass="active" smooth spy to="portfolio">
         <HiOutlineBriefcase />
-      </a>
-      <a
-        href="#contact"
-        className={activeNav === '#contact' ? 'active' : ''}
-        rel="noreferrer"
-        onClick={handleNavigation}
-      >
+      </Link>
+      <Link activeClass="active" smooth spy to="testimonials">
+        <FiUsers />
+      </Link>
+      <Link activeClass="active" smooth spy to="contact">
         <BiMessageSquareDetail />
-      </a>
+      </Link>
     </nav>
   );
 };

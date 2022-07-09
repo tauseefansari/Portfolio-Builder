@@ -1,14 +1,14 @@
 import { FC } from 'react';
 import { BsLinkedin, BsGithub, BsFacebook } from 'react-icons/bs';
-
+import { Link } from 'react-scroll';
 import './Footer.css';
 
 const Footer: FC = () => {
   return (
     <footer>
-      <a href="#home" className="footer__logo">
+      <Link smooth to="home" className="footer__logo">
         Tauseef Ansari
-      </a>
+      </Link>
       <ul className="permalinks">
         <li>
           <a href="#home">Home</a>
@@ -44,7 +44,7 @@ const Footer: FC = () => {
         </a>
       </div>
       <div className="footer__copyright">
-        <small>&copy; Tauseef Ansari. All right reserved</small>
+        <small>&copy; Tauseef Ansari All right reserved</small>
       </div>
     </footer>
   );

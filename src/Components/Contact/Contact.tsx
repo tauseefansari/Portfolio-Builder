@@ -36,7 +36,10 @@ const Contact: FC = () => {
             </a>
           </article>
         </div>
-        <form action="">
+        <form
+          data-bss-recipient="08bc627ccb59602b5627f027ea4a6ace"
+          data-bss-subject="Contact Portfolio"
+        >
           <input type="text" name="name" placeholder="Your Full Name" required />
           <input type="email" name="email" placeholder="Your Email" required />
           <textarea name="message" rows={7} placeholder="Your Message"></textarea>

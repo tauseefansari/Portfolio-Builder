@@ -82,6 +82,7 @@ section > h2 {
 a {
   color: var(--color-primary);
   transition: var(--transition);
+  cursor: pointer;
 }
 
 a:hover {

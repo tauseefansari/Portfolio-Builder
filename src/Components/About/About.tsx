@@ -4,6 +4,7 @@ import { FaAward } from 'react-icons/fa';
 import { FiUsers } from 'react-icons/fi';
 import { VscFolderLibrary } from 'react-icons/vsc';
 import './About.css';
+import { Link } from 'react-scroll';
 
 const About: FC = () => {
   return (
@@ -39,9 +40,9 @@ const About: FC = () => {
             mollitia nostrum nesciunt quod exercitationem impedit atque adipisci culpa repudiandae,
             amet at illum dolores maiores qui sunt.
           </p>
-          <a href="#contact" className="btn btn-primary">
+          <Link smooth to="contact" className="btn btn-primary">
             Let's Talk
-          </a>
+          </Link>
         </div>
       </div>
     </section>

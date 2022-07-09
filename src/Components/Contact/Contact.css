@@ -54,6 +54,32 @@ textarea {
   color: var(--color-white);
 }
 
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--color-light);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--color-light);
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--color-light);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--color-white);
+  -webkit-box-shadow: 0 0 0px 1000px var(--color-bg) inset;
+}
+
 /* ====================== MEDIA QUERIES (MEDIUM DEVICES) ====================== */
 @media screen and (max-width: 1024px) {
   .container.contact__container {
