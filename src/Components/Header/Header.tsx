@@ -11,7 +11,7 @@ const Header: FC = () => {
       <div className="container header__container">
         <h5>Hello I am</h5>
         <h1>Tauseef Ansari</h1>
-        <h5 className="text-light">React Developer</h5>
+        <h5 className="text-light">React & JS Developer</h5>
         <CTA />
         <HeaderSocial />
         <div className="personal">

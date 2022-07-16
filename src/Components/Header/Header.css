@@ -73,7 +73,7 @@ header {
   }
 
   .personal {
-    width: 18rem;
-    left: calc(50% - 9rem);
+    width: 17rem;
+    left: calc(50% - 8.3rem);
   }
 }

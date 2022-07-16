@@ -1,12 +1,15 @@
 import { FC } from 'react';
 import { Link } from 'react-scroll';
-// @ts-ignore Cannot find module '../../assets/cv.pdf' or its corresponding type declarations.ts(2307)
-import Resume from '../../assets/cv.pdf';
 
 const CTA: FC = () => {
   return (
     <div className="cta">
-      <a href={Resume} download className="btn">
+      <a
+        href="https://drive.google.com/file/d/1xEc7P64GXRQKKl8TLaezaNTctptn7tz5/view?usp=sharing"
+        target="_blank"
+        rel="noreferrer"
+        className="btn"
+      >
         Download CV
       </a>
       <Link smooth to="contact" className="btn btn-primary">

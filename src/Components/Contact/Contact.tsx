@@ -31,7 +31,7 @@ const Contact: FC = () => {
             <BsWhatsapp className="contact__option_icon" />
             <h4>WhatsApp</h4>
             <h5>9321391048</h5>
-            <a href="https://wa/me/+919321391048" rel="noreferrer">
+            <a href="https://wa.me/+919321391048" rel="noreferrer">
               Send a message
             </a>
           </article>

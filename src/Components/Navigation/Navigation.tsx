@@ -3,7 +3,6 @@ import { AiOutlineHome, AiOutlineUser } from 'react-icons/ai';
 import { BiBook, BiMessageSquareDetail } from 'react-icons/bi';
 import { HiOutlineBriefcase } from 'react-icons/hi';
 import { RiServiceLine } from 'react-icons/ri';
-import { FiUsers } from 'react-icons/fi';
 import { Link } from 'react-scroll';
 import './Navigation.css';
 
@@ -24,9 +23,6 @@ const Navigation: FC = () => {
       </Link>
       <Link activeClass="active" smooth spy to="portfolio">
         <HiOutlineBriefcase />
-      </Link>
-      <Link activeClass="active" smooth spy to="testimonials">
-        <FiUsers />
       </Link>
       <Link activeClass="active" smooth spy to="contact">
         <BiMessageSquareDetail />
