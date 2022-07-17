@@ -1,16 +1,21 @@
 import { FC } from 'react';
 import { BsLinkedin, BsGithub, BsFacebook } from 'react-icons/bs';
+import { useSelector } from 'react-redux';
+import { RootState } from '../../redux/store';
 
 const HeaderSocial: FC = () => {
+  const configuration = useSelector((state: RootState) => state.config.configuration);
+  const { linkedIn, github, facebook } = configuration.links;
+
   return (
     <div className="header__socials">
-      <a href="https://linkedin.com/tauseef-ansari" rel="noreferrer" target="_blank">
+      <a href={linkedIn} rel="noreferrer" target="_blank">
         <BsLinkedin />
       </a>
-      <a href="https://github.com/tauseefansari" rel="noreferrer" target="_blank">
+      <a href={github} rel="noreferrer" target="_blank">
         <BsGithub />
       </a>
-      <a href="https://facebook.com/tauseef51" rel="noreferrer" target="_blank">
+      <a href={facebook} rel="noreferrer" target="_blank">
         <BsFacebook />
       </a>
     </div>
