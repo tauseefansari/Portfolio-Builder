@@ -1,5 +1,3 @@
-import { VscFolderLibrary } from 'react-icons/vsc';
-
 export const Config = {
   configurationType: 'DEFAULT',
   imagesPreload: {
