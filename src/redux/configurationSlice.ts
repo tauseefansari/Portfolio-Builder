@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { Config } from '../Helpers/Config';
+import { DefaultValues } from '../Helpers/DefaultValues';
 import { Configuration } from '../modals/configuration';
 
 type InitialStateType = {
@@ -8,7 +8,7 @@ type InitialStateType = {
 };
 
 const initialState: InitialStateType = {
-  configuration: Config,
+  configuration: DefaultValues,
   loading: true
 };
 

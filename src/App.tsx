@@ -9,8 +9,8 @@ import Navigation from './Components/Navigation/Navigation';
 import Portfolio from './Components/Portfolio/Portfolio';
 import Services from './Components/Services/Services';
 import Testimonials from './Components/Testimonials/Testimonials';
-import Loader from './Helpers/Loader';
-import Preloader from './Helpers/Preloader';
+import Loader from './Components/Common/Loader';
+import Preloader from './Components/Common/Preloader';
 import useConfiguration from './hooks/use-configuration';
 import { RootState } from './redux/store';
 

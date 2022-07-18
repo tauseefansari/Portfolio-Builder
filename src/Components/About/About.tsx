@@ -1,12 +1,10 @@
 import { FC } from 'react';
-import { FaAward } from 'react-icons/fa';
-import { FiUsers } from 'react-icons/fi';
-import { VscFolderLibrary } from 'react-icons/vsc';
 import './About.css';
 import { Link } from 'react-scroll';
 import { imagePath } from '../../Helpers/Helpers';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../redux/store';
+import DynamicIcon from '../Common/DynamicIcon';
 
 const About: FC = () => {
   const configuration = useSelector((state: RootState) => state.config.configuration);
@@ -25,17 +23,17 @@ const About: FC = () => {
         <div className="about__content">
           <div className="about__cards">
             <article className="about__card">
-              <FaAward className="about__icon" />
+              <DynamicIcon iconName="EmojiEventsOutlined" className="about__icon" />
               <h5>Experience</h5>
               <small>1+ Years Working</small>
             </article>
             <article className="about__card">
-              <FiUsers className="about__icon" />
+              <DynamicIcon iconName="GroupOutlined" className="about__icon" />
               <h5>Clients</h5>
               <small>20+ Worldwide</small>
             </article>
             <article className="about__card">
-              <VscFolderLibrary className="about__icon" />
+              <DynamicIcon iconName="TopicOutlined" className="about__icon" />
               <h5>Projects</h5>
               <small>20+ Completed Projects</small>
             </article>

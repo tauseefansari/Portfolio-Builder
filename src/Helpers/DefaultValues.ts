@@ -1,4 +1,4 @@
-export const Config = {
+export const DefaultValues = {
   configurationType: 'DEFAULT',
   imagesPreload: {
     about: 'me-about.png',
@@ -24,6 +24,7 @@ export const Config = {
     resume: 'https://drive.google.com/file/d/1xEc7P64GXRQKKl8TLaezaNTctptn7tz5/view?usp=sharing'
   },
   home: {
+    id: 'home',
     header: 'Hello I am',
     title: 'Tauseef Ansari',
     subTitle: 'React & JS Developer',

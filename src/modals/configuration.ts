@@ -31,6 +31,7 @@ export interface Links {
 }
 
 export interface Home {
+  id: string;
   header: string;
   title: string;
   subTitle: string;

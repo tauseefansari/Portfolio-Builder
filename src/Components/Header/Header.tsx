@@ -10,10 +10,10 @@ import { imagePath } from '../../Helpers/Helpers';
 const Header: FC = () => {
   const configuration = useSelector((state: RootState) => state.config.configuration);
   const { me } = configuration.imagesPreload;
-  const { header, title, subTitle } = configuration.home;
+  const { id, header, title, subTitle } = configuration.home;
 
   return (
-    <header id="home">
+    <header id={id}>
       <div className="container header__container">
         <h5>{header}</h5>
         <h1>{title}</h1>
