@@ -9,22 +9,36 @@ import './Navigation.css';
 const Navigation: FC = () => {
   return (
     <nav>
-      <Link activeClass="active" smooth spy to="home">
+      <Link activeClass="active" smooth spy to="home" className="tooltip" data-tooltip="Home">
         <AiOutlineHome />
       </Link>
-      <Link activeClass="active" smooth spy to="about">
+      <Link activeClass="active" smooth spy to="about" className="tooltip" data-tooltip="About">
         <AiOutlineUser />
       </Link>
-      <Link activeClass="active" smooth spy to="experience">
+      <Link activeClass="active" smooth spy to="skills" className="tooltip" data-tooltip="Skills">
         <BiBook />
       </Link>
-      <Link activeClass="active" smooth spy to="services">
+      <Link
+        activeClass="active"
+        smooth
+        spy
+        to="services"
+        className="tooltip"
+        data-tooltip="Services"
+      >
         <RiServiceLine />
       </Link>
-      <Link activeClass="active" smooth spy to="portfolio">
+      <Link
+        activeClass="active"
+        smooth
+        spy
+        to="portfolio"
+        className="tooltip"
+        data-tooltip="Portfolio"
+      >
         <HiOutlineBriefcase />
       </Link>
-      <Link activeClass="active" smooth spy to="contact">
+      <Link activeClass="active" smooth spy to="contact" className="tooltip" data-tooltip="Contact">
         <BiMessageSquareDetail />
       </Link>
     </nav>

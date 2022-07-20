@@ -2,7 +2,7 @@ import { FC } from 'react';
 import { useSelector } from 'react-redux';
 import About from './Components/About/About';
 import Contact from './Components/Contact/Contact';
-import Experience from './Components/Experience/Experience';
+import Skills from './Components/Skills/Skills';
 import Footer from './Components/Footer/Footer';
 import Header from './Components/Header/Header';
 import Navigation from './Components/Navigation/Navigation';
@@ -28,7 +28,7 @@ const App: FC = () => {
       <Header />
       <Navigation />
       <About />
-      <Experience />
+      <Skills />
       <Services />
       <Portfolio />
       <Testimonials />

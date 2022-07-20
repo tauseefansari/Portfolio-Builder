@@ -2,12 +2,12 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { DefaultValues } from '../Helpers/DefaultValues';
 import { Configuration } from '../modals/configuration';
 
-type InitialStateType = {
+type State = {
   configuration: Configuration;
   loading: boolean;
 };
 
-const initialState: InitialStateType = {
+const initialState: State = {
   configuration: DefaultValues,
   loading: true
 };

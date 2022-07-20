@@ -1,13 +1,13 @@
-import * as Icons from '@mui/icons-material';
+import * as Icons from 'react-icons/di';
 
 type Props = {
   iconName: keyof typeof Icons;
   className?: string;
 };
 
-const DynamicIcon = ({ iconName, className }: Props) => {
+const DevIcon = ({ iconName, className }: Props) => {
   const IconComponent = Icons[iconName];
   return <IconComponent className={className || ''} />;
 };
 
-export default DynamicIcon;
+export default DevIcon;
