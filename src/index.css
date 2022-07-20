@@ -49,6 +49,7 @@ body {
   display: grid;
   place-items: center;
   position: relative;
+  overflow: hidden;
 }
 
 .scene {
