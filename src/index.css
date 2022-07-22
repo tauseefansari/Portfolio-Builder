@@ -18,6 +18,20 @@
   --color-white: #fff;
   --color-light: rgba(255, 255, 255, 0.6);
 
+  /* Skills Badges Colors */
+  --color-yellow: #ffb300;
+  --color-orange: #f68401;
+  --color-pink: #dc306f;
+  --color-red: #c62828;
+  --color-purple: #7127a8;
+  --color-teal: #34a297;
+  --color-blue: #259af3;
+  --color-blue-dark: #1c68c5;
+  --color-green: #7cb342;
+  --color-green-dark: #00944a;
+  --color-silver: #9e9e9e;
+  --color-gold: #b7892b;
+
   --transition: all 400ms ease;
 
   /* ====================== CONSTANTS VARIABLES ====================== */
