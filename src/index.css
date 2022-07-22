@@ -274,6 +274,10 @@ img {
   section {
     margin-top: 6rem;
   }
+
+  .tooltip:before {
+    display: none;
+  }
 }
 
 /* ====================== MEDIA QUERIES (SMALL DEVICES) ====================== */
@@ -284,5 +288,9 @@ img {
 
   section > h2 {
     margin-bottom: 2rem;
+  }
+
+  .tooltip:before {
+    display: none;
   }
 }
