@@ -11,7 +11,7 @@
   width: 2px;
   margin-left: -1.5px;
   content: '';
-  background-color: #e9ecef;
+  background: var(--color-white);
 }
 
 .timeline > li {
@@ -59,10 +59,16 @@
   height: 60px;
   margin-left: 8px;
   text-align: center;
-  color: white;
-  border: 7px solid #e9ecef;
+  color: var(--color-white);
+  border: 7px solid var(--color-white);
   border-radius: 100%;
-  background-color: var(--color-bg-variant);
+  background: var(--color-white);
+}
+
+.timeline-image svg {
+  font-size: 2.4rem;
+  text-align: center;
+  margin-top: 2px;
 }
 
 .timeline > li .timeline-image h4,
@@ -117,28 +123,39 @@
   .timeline:before {
     left: 50%;
   }
+
   .timeline > li {
     min-height: 100px;
     margin-bottom: 100px;
   }
+
   .timeline > li .timeline-panel {
     float: left;
     width: 41%;
     padding: 0 20px 20px 30px;
     text-align: right;
   }
+
   .timeline > li .timeline-image {
     left: 50%;
     width: 80px;
     height: 80px;
     margin-left: -42px;
   }
+
+  .timeline-image svg {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-top: 4px;
+  }
+
   .timeline > li .timeline-image h4,
   .timeline > li .timeline-image .h4 {
     font-size: 13px;
     line-height: 18px;
     margin-top: 16px;
   }
+
   .timeline > li.timeline-inverted > .timeline-panel {
     float: right;
     padding: 0 30px 20px 20px;
@@ -151,20 +168,30 @@
   .timeline > li {
     min-height: 150px;
   }
+
   .timeline > li .timeline-panel {
     padding: 0 20px 20px;
   }
+
   .timeline > li .timeline-image {
     width: 90px;
     height: 90px;
     margin-left: -48px;
   }
+
+  .timeline-image svg {
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 4px;
+  }
+
   .timeline > li .timeline-image h4,
   .timeline > li .timeline-image .h4 {
     font-size: 18px;
     line-height: 26px;
     margin-top: 30px;
   }
+
   .timeline > li.timeline-inverted > .timeline-panel {
     padding: 0 20px 20px;
   }
@@ -175,18 +202,28 @@
   .timeline > li {
     min-height: 170px;
   }
+
   .timeline > li .timeline-panel {
     padding: 0 20px 20px 100px;
   }
+
   .timeline > li .timeline-image {
     width: 100px;
     height: 100px;
     margin-left: -52px;
   }
+
+  .timeline-image svg {
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 2px;
+  }
+
   .timeline > li .timeline-image h4,
   .timeline > li .timeline-image .h4 {
     margin-top: 40px;
   }
+
   .timeline > li.timeline-inverted > .timeline-panel {
     padding: 0 100px 20px 20px;
   }
@@ -203,4 +240,52 @@
 
 .timeline-body p {
   line-height: 1.75;
+}
+
+.yellow-icon {
+  color: var(--color-yellow);
+}
+
+.orange-icon {
+  color: var(--color-orange);
+}
+
+.pink-icon {
+  color: var(--color-pink);
+}
+
+.red-icon {
+  color: var(--color-red);
+}
+
+.purple-icon {
+  color: var(--color-purple);
+}
+
+.teal-icon {
+  color: var(--color-teal);
+}
+
+.blue-icon {
+  color: var(--color-blue);
+}
+
+.blue-dark-icon {
+  color: var(--color-blue-dark);
+}
+
+.green-icon {
+  color: var(--color-green);
+}
+
+.green-dark-icon {
+  color: var(--color-green-dark);
+}
+
+.silver-icon {
+  color: var(--color-silver);
+}
+
+.gold-icon {
+  color: var(--color-gold);
 }

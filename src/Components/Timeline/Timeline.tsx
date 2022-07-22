@@ -1,6 +1,5 @@
 import { FC } from 'react';
-// import { BiCheck } from 'react-icons/bi';
-// import DynamicIcon from '../Common/DynamicIcon';
+import DynamicIcon from '../Common/DynamicIcon';
 import './Timeline.css';
 
 const Timeline: FC = () => {
@@ -11,7 +10,9 @@ const Timeline: FC = () => {
       <div className="container">
         <ul className="timeline">
           <li>
-            <div className="timeline-image"></div>
+            <div className="timeline-image">
+              <DynamicIcon iconName="GitHub" className="yellow-icon" />
+            </div>
             <div className="timeline-panel">
               <div className="timeline-heading">
                 <h4>2009-2011</h4>
@@ -27,7 +28,9 @@ const Timeline: FC = () => {
             </div>
           </li>
           <li className="timeline-inverted">
-            <div className="timeline-image"></div>
+            <div className="timeline-image">
+              <DynamicIcon iconName="GitHub" className="green-icon" />
+            </div>
             <div className="timeline-panel">
               <div className="timeline-heading">
                 <h4>March 2011</h4>
@@ -43,7 +46,9 @@ const Timeline: FC = () => {
             </div>
           </li>
           <li>
-            <div className="timeline-image"></div>
+            <div className="timeline-image">
+              <DynamicIcon iconName="GitHub" className="teal-icon" />
+            </div>
             <div className="timeline-panel">
               <div className="timeline-heading">
                 <h4>December 2015</h4>
