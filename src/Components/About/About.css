@@ -15,7 +15,11 @@
 }
 
 .about__personal_image {
+  background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
   border-radius: 2rem;
+  width: inherit;
+  height: inherit;
+  padding: 1.5rem;
   overflow: hidden;
   transform: rotate(10deg);
   transition: var(--transition);
