@@ -104,27 +104,27 @@
 }
 
 .yellow {
-  background: linear-gradient(to bottom right, #ffeb3b 0%, #fbc02d 100%);
+  background: var(--color-yellow-gradient);
   color: var(--color-yellow);
 }
 
 .orange {
-  background: linear-gradient(to bottom right, #ffc107 0%, #f57c00 100%);
+  background: var(--color-orange-gradient);
   color: var(--color-orange);
 }
 
 .pink {
-  background: linear-gradient(to bottom right, #f48fb1 0%, #d81b60 100%);
+  background: var(--color-pink-gradient);
   color: var(--color-pink);
 }
 
 .red {
-  background: linear-gradient(to bottom right, #f4511e 0%, #b71c1c 100%);
+  background: var(--color-red-gradient);
   color: var(--color-red);
 }
 
 .purple {
-  background: linear-gradient(to bottom right, #ab47bc 0%, #4527a0 100%);
+  background: var(--color-purple-gradient);
   color: var(--color-purple);
 }
 
@@ -134,31 +134,31 @@
 }
 
 .blue {
-  background: linear-gradient(to bottom right, #4fc3f7 0%, #2196f3 100%);
+  background: var(--color-blue-gradient);
   color: var(--color-blue);
 }
 
 .blue-dark {
-  background: linear-gradient(to bottom right, #1976d2 0%, #283593 100%);
+  background: var(--color-blue-dark-gradient);
   color: var(--color-blue-dark);
 }
 
 .green {
-  background: linear-gradient(to bottom right, #cddc39 0%, #8bc34a 100%);
+  background: var(--color-green-gradient);
   color: var(--color-green);
 }
 
 .green-dark {
-  background: linear-gradient(to bottom right, #4caf50 0%, #1b5e20 100%);
+  background: var(--color-green-dark-gradient);
   color: var(--color-green-dark);
 }
 
 .silver {
-  background: linear-gradient(to bottom right, #e0e0e0 0%, #bdbdbd 100%);
+  background: var(--color-silver-gradient);
   color: var(--color-silver);
 }
 
 .gold {
-  background: linear-gradient(to bottom right, #e6ce6a 0%, #b7892b 100%);
+  background: var(--color-gold-gradient);
   color: var(--color-gold);
 }
