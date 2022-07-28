@@ -21,11 +21,6 @@ const Footer: FC = () => {
           </Link>
         </li>
         <li>
-          <Link smooth to="experience">
-            Experience
-          </Link>
-        </li>
-        <li>
           <Link smooth to="skills">
             Skills
           </Link>
