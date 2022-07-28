@@ -1,5 +1,4 @@
 .skills__container ul {
-  width: min(60rem, 90%);
   margin-inline: auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
