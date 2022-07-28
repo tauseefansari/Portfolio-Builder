@@ -28,11 +28,6 @@ const About: FC = () => {
               <small>1+ Years Working</small>
             </article>
             <article className="about__card">
-              <DynamicIcon iconName="GroupOutlined" className="about__icon" />
-              <h5>Clients</h5>
-              <small>20+ Worldwide</small>
-            </article>
-            <article className="about__card">
               <DynamicIcon iconName="TopicOutlined" className="about__icon" />
               <h5>Projects</h5>
               <small>20+ Completed Projects</small>
