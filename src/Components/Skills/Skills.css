@@ -1,98 +1,102 @@
-.container {
-  text-align: center;
+.skills__container ul {
+  width: min(60rem, 90%);
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  justify-content: center;
+  gap: 2rem;
 }
 
-.badge {
-  position: relative;
-  margin: 1.2rem 2rem;
-  width: 6rem;
-  height: 8.2rem;
-  border-radius: 25px;
-  display: inline-block;
-  top: 0;
+.skills__container ul li {
+  max-width: 12rem;
+  justify-self: center;
+  display: grid;
+  grid-template:
+    'icon'
+    'line'
+    'dot'
+    'title'
+    'bar' 1fr;
+  justify-items: center;
+  align-items: flex-start;
+  text-align: center;
   transition: var(--transition);
+  cursor: pointer;
 }
 
-.badge:before,
-.badge:after {
-  position: absolute;
-  width: inherit;
-  height: inherit;
-  border-radius: inherit;
-  background: inherit;
-  content: '';
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
+.skills__container ul li:hover {
+  transform: scale(1.1);
 }
 
-.badge:before {
-  transform: rotate(60deg);
-}
-
-.badge:after {
-  transform: rotate(-60deg);
-}
-
-.badge:hover {
-  top: -4px;
-}
-
-.badge .circle {
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  background: #fff;
-  z-index: 10;
+.skills__container ul li .skills__icon {
+  grid-area: icon;
+  width: 6rem;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  color: var(--color-white);
+  font-size: 2.5rem;
+  border: 0.4rem solid var(--color-white);
   border-radius: 50%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  text-align: center;
+  background: var(--color-primary-variant);
+  box-shadow: -0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.45),
+    inset -0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.45);
 }
 
-.badge .circle svg {
-  font-size: 3.5rem;
-  margin-top: 8px;
+.skills__container ul li::before {
+  content: '';
+  grid-area: line;
+  height: 2rem;
+  border-right: 2px dotted currentColor;
+}
+
+.skills__container ul li::after {
+  content: '';
+  grid-area: dot;
+  width: 1rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--color-bg-variant);
+  justify-self: center;
+  margin-bottom: 0.5rem;
+}
+
+.skills__container ul li .skills__title {
+  grid-area: title;
+  margin-block: 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* ====================== Progress ====================== */
-.bar {
-  position: absolute;
+.skills__container .skills__bar {
+  grid-area: bar;
+  position: relative;
   width: 120px;
   height: 30px;
   border-radius: 20px;
   box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
   overflow: hidden;
   z-index: 11;
-  bottom: 12px;
-  left: 55%;
-  bottom: 7%;
-  margin-left: -63px;
   background: var(--color-light);
-  cursor: default;
 }
 
-.bar .fill {
+.skills__container .skills__bar .fill {
   position: absolute;
   z-index: 2;
   height: 100%;
-  background: var(--color-bg-variant);
+  background: var(--color-primary);
   transition: var(--transition);
   overflow: hidden;
 }
 
-.bar .fill .text {
+.skills__container .skills__bar .fill .text {
   width: 120px;
   z-index: 3;
   color: var(--color-white);
 }
 
-.bar .text {
+.skills__container .skills__bar .text {
   position: absolute;
   z-index: 1;
   display: flex;
@@ -101,64 +105,4 @@
   width: 100%;
   height: 100%;
   color: var(--color-bg-variant);
-}
-
-.yellow {
-  background: var(--color-yellow-gradient);
-  color: var(--color-yellow);
-}
-
-.orange {
-  background: var(--color-orange-gradient);
-  color: var(--color-orange);
-}
-
-.pink {
-  background: var(--color-pink-gradient);
-  color: var(--color-pink);
-}
-
-.red {
-  background: var(--color-red-gradient);
-  color: var(--color-red);
-}
-
-.purple {
-  background: var(--color-purple-gradient);
-  color: var(--color-purple);
-}
-
-.teal {
-  background: linear-gradient(to bottom right, #4db6ac 0%, #00796b 100%);
-  color: var(--color-teal);
-}
-
-.blue {
-  background: var(--color-blue-gradient);
-  color: var(--color-blue);
-}
-
-.blue-dark {
-  background: var(--color-blue-dark-gradient);
-  color: var(--color-blue-dark);
-}
-
-.green {
-  background: var(--color-green-gradient);
-  color: var(--color-green);
-}
-
-.green-dark {
-  background: var(--color-green-dark-gradient);
-  color: var(--color-green-dark);
-}
-
-.silver {
-  background: var(--color-silver-gradient);
-  color: var(--color-silver);
-}
-
-.gold {
-  background: var(--color-gold-gradient);
-  color: var(--color-gold);
 }

@@ -31,6 +31,11 @@ const Footer: FC = () => {
           </Link>
         </li>
         <li>
+          <Link smooth to="timeline">
+            My Journey
+          </Link>
+        </li>
+        <li>
           <Link smooth to="portfolio">
             Portfolio
           </Link>

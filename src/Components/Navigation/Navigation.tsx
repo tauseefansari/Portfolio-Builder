@@ -22,9 +22,9 @@ const Navigation: FC = () => {
         activeClass="active"
         smooth
         spy
-        to="services"
+        to="timeline"
         className="tooltip"
-        data-tooltip="Services"
+        data-tooltip="My Journey"
       >
         <RiServiceLine />
       </Link>
