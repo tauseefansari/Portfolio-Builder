@@ -158,6 +158,6 @@
 /* ====================== MEDIA QUERIES (SMALL DEVICES) ====================== */
 @media screen and (max-width: 600px) {
   .timeline__container ul {
-    margin-left: 10px;
+    margin-left: 1rem;
   }
 }
