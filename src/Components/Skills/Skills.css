@@ -1,7 +1,7 @@
 .skills__container ul {
   margin-inline: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  grid-template-columns: repeat(5, 1fr);
   justify-content: center;
   gap: 2rem;
 }
@@ -116,11 +116,26 @@
   animation: waterAnimation 3s linear infinite;
 }
 
+/* ====================== PROGRESS BAR ANIMATION ====================== */
 @keyframes waterAnimation {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* ====================== MEDIA QUERIES (MEDIUM DEVICES) ====================== */
+@media screen and (max-width: 1024px) {
+  .skills__container ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ====================== MEDIA QUERIES (SMALL DEVICES) ====================== */
+@media screen and (max-width: 600px) {
+  .skills__container ul {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

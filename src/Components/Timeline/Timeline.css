@@ -117,8 +117,8 @@
   bottom: 0.25rem;
 }
 
-/* ====================== MEDIA QUERIES (MEDIUM DEVICES) ====================== */
-@media (min-width: 40rem) {
+/* ====================== MEDIA QUERIES (MEDIUM AND SMALL DEVICES) ====================== */
+@media (min-width: 640px) {
   .timeline__container ul {
     grid-template-columns: 1fr var(--line-w) 1fr;
   }

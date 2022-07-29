@@ -58,7 +58,7 @@ const Footer: FC = () => {
         </a>
       </div>
       <div className="footer__copyright">
-        <small>&copy; Tauseef Ansari All right reserved</small>
+        <small>&copy; Tauseef Ansari All rights reserved</small>
       </div>
     </footer>
   );
