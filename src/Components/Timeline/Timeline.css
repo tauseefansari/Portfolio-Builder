@@ -78,7 +78,7 @@
 
 .timeline__container ul li .timeline__title,
 .timeline__container ul li .timeline__descr {
-  background: var(--color-primary-variant);
+  background: var(--color-bg-variant);
   position: relative;
   padding-inline: 1.5rem;
 }
