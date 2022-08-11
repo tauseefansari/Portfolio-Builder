@@ -2,44 +2,41 @@ import { FC } from 'react';
 import './About.css';
 import { Link } from 'react-scroll';
 import { imagePath } from '../../Helpers/Helpers';
-import { useSelector } from 'react-redux';
-import { RootState } from '../../redux/store';
 import DynamicIcon from '../Common/DynamicIcon';
+import { About as AboutProps, LetsTalkBtn } from '../../modals/configuration';
 
-const About: FC = () => {
-  const configuration = useSelector((state: RootState) => state.config.configuration);
-  const { about } = configuration.imagesPreload;
+type Props = {
+  aboutObj: AboutProps;
+  letsTalk: LetsTalkBtn;
+};
+
+const About: FC<Props> = (props) => {
+  const { id, header, title, aboutImage, aboutCards, aboutDescriptions } = props.aboutObj;
+  const { letsTalk } = props;
 
   return (
-    <section id="about">
-      <h5>Get To Know</h5>
-      <h2>About Me</h2>
+    <section id={id}>
+      <h5>{header}</h5>
+      <h2>{title}</h2>
       <div className="container about__container">
         <div className="about__personal">
           <div className="about__personal_image">
-            <img src={imagePath(about)} alt="About" />
+            <img src={imagePath(aboutImage)} alt="About" />
           </div>
         </div>
         <div className="about__content">
           <div className="about__cards">
-            <article className="about__card">
-              <DynamicIcon iconName="EmojiEventsOutlined" className="about__icon" />
-              <h5>Experience</h5>
-              <small>1+ Years Working</small>
-            </article>
-            <article className="about__card">
-              <DynamicIcon iconName="TopicOutlined" className="about__icon" />
-              <h5>Projects</h5>
-              <small>20+ Completed Projects</small>
-            </article>
+            {aboutCards.map((aboutCard, i) => (
+              <article className="about__card" key={`AboutCard_${i}`}>
+                <DynamicIcon iconName={aboutCard.iconName} className="about__icon" />
+                <h5>{aboutCard.title}</h5>
+                <small>{aboutCard.description}</small>
+              </article>
+            ))}
           </div>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut ipsa deserunt nobis saepe
-            mollitia nostrum nesciunt quod exercitationem impedit atque adipisci culpa repudiandae,
-            amet at illum dolores maiores qui sunt.
-          </p>
-          <Link smooth to="contact" className="btn btn-primary">
-            Let's Talk
+          <p>{aboutDescriptions}</p>
+          <Link smooth to={letsTalk.link} className="btn btn-primary">
+            {letsTalk.title}
           </Link>
         </div>
       </div>

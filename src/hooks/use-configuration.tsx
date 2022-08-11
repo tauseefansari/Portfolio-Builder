@@ -12,6 +12,7 @@ const useConfiguration = () => {
       .then((response) => response.json())
       .then((result) => {
         dispatch(setConfiguration(result));
+        document.title = result.tabTitle || 'Portfolio';
         setConfigLoaded(true);
       });
   }, [dispatch]);

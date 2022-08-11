@@ -1,23 +1,21 @@
 import { FC } from 'react';
-import { BsLinkedin, BsGithub, BsFacebook } from 'react-icons/bs';
-import { useSelector } from 'react-redux';
-import { RootState } from '../../redux/store';
+import { Social } from '../../modals/configuration';
+import DynamicIcon from '../Common/DynamicIcon';
 
-const HeaderSocial: FC = () => {
-  const configuration = useSelector((state: RootState) => state.config.configuration);
-  const { linkedIn, github, facebook } = configuration.links;
+type Props = {
+  socials: Social[];
+};
+
+const HeaderSocial: FC<Props> = (props) => {
+  const { socials } = props;
 
   return (
     <div className="header__socials">
-      <a href={linkedIn} rel="noreferrer" target="_blank">
-        <BsLinkedin />
-      </a>
-      <a href={github} rel="noreferrer" target="_blank">
-        <BsGithub />
-      </a>
-      <a href={facebook} rel="noreferrer" target="_blank">
-        <BsFacebook />
-      </a>
+      {socials.map((social, i) => (
+        <a key={`HeaderSocial_${i}`} href={social.url} rel="noreferrer" target="_blank">
+          <DynamicIcon iconName={social.iconName} />
+        </a>
+      ))}
     </div>
   );
 };

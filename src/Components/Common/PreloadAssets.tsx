@@ -4,7 +4,7 @@ import { setLoader } from '../../redux/configurationSlice';
 import { RootState } from '../../redux/store';
 import { imagePath } from '../../Helpers/Helpers';
 
-const Preloader: FC = () => {
+const PreloadAssets: FC = () => {
   const configuration = useSelector((state: RootState) => state.config.configuration);
   const [loading, setLoading] = useState(true);
   const dispatch = useDispatch();
@@ -28,4 +28,4 @@ const Preloader: FC = () => {
   ) : null;
 };
 
-export default Preloader;
+export default PreloadAssets;

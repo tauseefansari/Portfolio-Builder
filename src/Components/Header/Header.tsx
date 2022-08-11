@@ -3,14 +3,18 @@ import CTA from './CTA';
 import HeaderSocial from './HeaderSocial';
 import { Link } from 'react-scroll';
 import './Header.css';
-import { useSelector } from 'react-redux';
-import { RootState } from '../../redux/store';
 import { imagePath } from '../../Helpers/Helpers';
+import { Header as HeaderProps, Social } from '../../modals/configuration';
 
-const Header: FC = () => {
-  const configuration = useSelector((state: RootState) => state.config.configuration);
-  const { me } = configuration.imagesPreload;
-  const { id, header, title, subTitle } = configuration.home;
+type Props = {
+  headerObj: HeaderProps;
+  socials: Social[];
+  contactId: string;
+};
+
+const Header: FC<Props> = (props) => {
+  const { id, header, title, subTitle, letsTalkBtn, downloadCVBtn, headerImage } = props.headerObj;
+  const { socials, contactId } = props;
 
   return (
     <header id={id}>
@@ -18,12 +22,12 @@ const Header: FC = () => {
         <h5>{header}</h5>
         <h1>{title}</h1>
         <h5 className="text-light">{subTitle}</h5>
-        <CTA />
-        <HeaderSocial />
+        <CTA letsTalk={letsTalkBtn} downloadCV={downloadCVBtn} />
+        <HeaderSocial socials={socials} />
         <div className="personal">
-          <img src={imagePath(me)} alt="Personal" />
+          <img src={imagePath(headerImage)} alt="Personal" />
         </div>
-        <Link smooth to="contact" className="scroll__down">
+        <Link smooth to={contactId} className="scroll__down">
           Scroll Down
         </Link>
       </div>

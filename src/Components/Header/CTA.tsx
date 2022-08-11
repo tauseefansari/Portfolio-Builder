@@ -1,20 +1,22 @@
 import { FC } from 'react';
-import { useSelector } from 'react-redux';
 import { Link } from 'react-scroll';
-import { RootState } from '../../redux/store';
+import { LetsTalkBtn, DownloadCvbtn } from '../../modals/configuration';
 
-const CTA: FC = () => {
-  const configuration = useSelector((state: RootState) => state.config.configuration);
-  const { resume } = configuration.links;
-  const { downloadCVBtn, letsTalkBtn } = configuration.home;
+type Props = {
+  letsTalk: LetsTalkBtn;
+  downloadCV: DownloadCvbtn;
+};
+
+const CTA: FC<Props> = (props) => {
+  const { letsTalk, downloadCV } = props;
 
   return (
     <div className="cta">
-      <a href={resume} target="_blank" rel="noreferrer" className="btn">
-        {downloadCVBtn}
+      <a href={downloadCV.url} target="_blank" rel="noreferrer" className="btn">
+        {downloadCV.title}
       </a>
-      <Link smooth to="contact" className="btn btn-primary">
-        {letsTalkBtn}
+      <Link smooth to={letsTalk.link} className="btn btn-primary">
+        {letsTalk.title}
       </Link>
     </div>
   );

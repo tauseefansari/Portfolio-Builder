@@ -1,64 +1,41 @@
 import { FC } from 'react';
-import { BsLinkedin, BsGithub, BsFacebook } from 'react-icons/bs';
 import { Link } from 'react-scroll';
+import { Footer as FooterProps, Social } from '../../modals/configuration';
+import DynamicIcon from '../Common/DynamicIcon';
 import './Footer.css';
 
-const Footer: FC = () => {
+type Props = {
+  footerObj: FooterProps;
+  socials: Social[];
+};
+
+const Footer: FC<Props> = (props) => {
+  const { id, header, links, copyright } = props.footerObj;
+  const { socials } = props;
+
   return (
-    <footer>
+    <footer id={id}>
       <Link smooth to="home" className="footer__logo">
-        Tauseef Ansari
+        {header}
       </Link>
       <ul className="permalinks">
-        <li>
-          <Link smooth to="home">
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link smooth to="about">
-            About
-          </Link>
-        </li>
-        <li>
-          <Link smooth to="skills">
-            Skills
-          </Link>
-        </li>
-        <li>
-          <Link smooth to="timeline">
-            My Journey
-          </Link>
-        </li>
-        <li>
-          <Link smooth to="portfolio">
-            Portfolio
-          </Link>
-        </li>
-        <li>
-          <Link smooth to="testimonials">
-            Testimonials
-          </Link>
-        </li>
-        <li>
-          <Link smooth to="contact">
-            Contact
-          </Link>
-        </li>
+        {links.map((link, i) => (
+          <li key={`FooterLink_${i}`}>
+            <Link smooth to={link.id}>
+              {link.title}
+            </Link>
+          </li>
+        ))}
       </ul>
       <div className="footer__socials">
-        <a href="https://linkedin.com/tauseef-ansari" rel="noreferrer" target="_blank">
-          <BsLinkedin />
-        </a>
-        <a href="https://github.com/tauseefansari" rel="noreferrer" target="_blank">
-          <BsGithub />
-        </a>
-        <a href="https://facebook.com/tauseef51" rel="noreferrer" target="_blank">
-          <BsFacebook />
-        </a>
+        {socials.map((social, i) => (
+          <a key={`FooterSocial_${i}`} href={social.url} rel="noreferrer" target="_blank">
+            <DynamicIcon iconName={social.iconName} />
+          </a>
+        ))}
       </div>
       <div className="footer__copyright">
-        <small>&copy; Tauseef Ansari All rights reserved</small>
+        <small>&copy; {copyright}</small>
       </div>
     </footer>
   );

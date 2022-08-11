@@ -1,3 +1,3 @@
 export const LOCATIONS = {
-  DEFAULT_CONFIG: './json/defaultConfiguration.json'
+  DEFAULT_CONFIG: './json/Configuration.json'
 };

@@ -1,50 +1,53 @@
 import { FC } from 'react';
-import { MdOutlineEmail } from 'react-icons/md';
-import { RiMessengerLine } from 'react-icons/ri';
-import { BsWhatsapp } from 'react-icons/bs';
 import './Contact.css';
+import { Contact as ContactProps } from '../../modals/configuration';
+import DynamicIcon from '../Common/DynamicIcon';
 
-const Contact: FC = () => {
+type Props = {
+  contactObj: ContactProps;
+};
+
+const Contact: FC<Props> = (props) => {
+  const { id, header, title, contactCards, mailSubject, contactForm, submitBtn } = props.contactObj;
+
   return (
-    <section id="contact">
-      <h5>Get In Touch</h5>
-      <h2>Contact Me</h2>
+    <section id={id}>
+      <h5>{header}</h5>
+      <h2>{title}</h2>
       <div className="container contact__container">
         <div className="contact__options">
-          <article className="contact__option">
-            <MdOutlineEmail className="contact__option_icon" />
-            <h4>Email</h4>
-            <h5>tauseeftanvir@gmail.com</h5>
-            <a href="mailto:tauseeftanvir@gmail.com" rel="noreferrer">
-              Send a message
-            </a>
-          </article>
-          <article className="contact__option">
-            <RiMessengerLine className="contact__option_icon" />
-            <h4>Messenger</h4>
-            <h5>Tauseef Ansari</h5>
-            <a href="https://m.me/tauseef51" rel="noreferrer">
-              Send a message
-            </a>
-          </article>
-          <article className="contact__option">
-            <BsWhatsapp className="contact__option_icon" />
-            <h4>WhatsApp</h4>
-            <h5>9321391048</h5>
-            <a href="https://wa.me/+919321391048" rel="noreferrer">
-              Send a message
-            </a>
-          </article>
+          {contactCards.map((contactCard, i) => (
+            <article className="contact__option" key={`Contact_${i}`}>
+              <DynamicIcon iconName={contactCard.iconName} />
+              <h4>{contactCard.title}</h4>
+              <h5>{contactCard.description}</h5>
+              <a href={contactCard.link.url} rel="noreferrer">
+                {contactCard.link.title}
+              </a>
+            </article>
+          ))}
         </div>
-        <form
-          data-bss-recipient="08bc627ccb59602b5627f027ea4a6ace"
-          data-bss-subject="Contact Portfolio"
-        >
-          <input type="text" name="name" placeholder="Your Full Name" required />
-          <input type="email" name="email" placeholder="Your Email" required />
-          <textarea name="message" rows={7} placeholder="Your Message"></textarea>
+        <form data-bss-recipient="08bc627ccb59602b5627f027ea4a6ace" data-bss-subject={mailSubject}>
+          {contactForm.map((contactFormItem, i) =>
+            contactFormItem.type === 'textarea' ? (
+              <textarea
+                key={`ContactForm_${i}`}
+                name="message"
+                rows={7}
+                placeholder={contactFormItem.placeholder}
+              ></textarea>
+            ) : (
+              <input
+                key={`ContactForm_${i}`}
+                type="text"
+                name="name"
+                placeholder={contactFormItem.placeholder}
+                required
+              />
+            )
+          )}
           <button type="submit" className="btn btn-primary">
-            Send Message
+            {submitBtn}
           </button>
         </form>
       </div>
