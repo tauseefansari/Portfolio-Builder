@@ -74,6 +74,6 @@ header {
 
   .personal {
     width: 17rem;
-    left: calc(50% - 8.5rem);
+    left: calc(50% - 9rem);
   }
 }
