@@ -6,22 +6,23 @@ import { imagePath } from '../../Helpers/Helpers';
 
 const PreloadAssets: FC = () => {
   const configuration = useSelector((state: RootState) => state.config.configuration);
+  const { imagesPreload } = configuration;
   const [loading, setLoading] = useState(true);
   const dispatch = useDispatch();
 
   useLayoutEffect(() => {
     const images: HTMLImageElement[] = [];
-    Object.values(configuration.imagesPreload).forEach((image, i) => {
+    imagesPreload.forEach((image, i) => {
       images[i] = new Image();
       images[i].src = imagePath(image);
     });
     dispatch(setLoader(false));
     setLoading(false);
-  }, [loading, dispatch, configuration]);
+  }, [loading, dispatch, configuration, imagesPreload]);
 
   return loading ? (
     <div style={{ display: 'none' }}>
-      {Object.values(configuration.imagesPreload).map((image, id) => (
+      {imagesPreload.map((image, id) => (
         <img src={imagePath(image)} alt={image} key={id} />
       ))}
     </div>

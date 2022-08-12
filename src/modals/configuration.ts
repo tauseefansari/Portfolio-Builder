@@ -3,7 +3,7 @@ import * as DevIcons from 'react-icons/di';
 
 export type Configuration = {
   tabTitle?: string;
-  imagesPreload: ImagesPreload;
+  imagesPreload: string[];
   socials: Social[];
   navigation: Navigation;
   header: Header;
@@ -14,21 +14,6 @@ export type Configuration = {
   testimonials: Testimonials;
   contact: Contact;
   footer: Footer;
-};
-
-export type ImagesPreload = {
-  about: string;
-  me: string;
-  avatar1?: string;
-  avatar2?: string;
-  avatar3?: string;
-  avatar4?: string;
-  portfolio1?: string;
-  portfolio2?: string;
-  portfolio3?: string;
-  portfolio4?: string;
-  portfolio5?: string;
-  portfolio6?: string;
 };
 
 export type Social = {
@@ -102,7 +87,7 @@ export type Timeline = {
 };
 
 export type TimelineCard = {
-  header: string;
+  date: string;
   title: string;
   description: string;
 };
@@ -143,7 +128,8 @@ export type Contact = {
   id: string;
   header: string;
   title: string;
-  mailSubject: string;
+  mailSubject?: string;
+  emailKey?: string;
   contactCards: ContactCard[];
   contactForm: ContactForm[];
   submitBtn: string;

@@ -1,19 +1,19 @@
 {
   "tabTitle": "It's Tauseef",
-  "imagesPreload": {
-    "about": "me-about.png",
-    "me": "me.png",
-    "avatar1": "avatar1.jpg",
-    "avatar2": "avatar2.jpg",
-    "avatar3": "avatar3.jpg",
-    "avatar4": "avatar4.jpg",
-    "portfolio1": "portfolio1.jpg",
-    "portfolio2": "portfolio2.jpg",
-    "portfolio3": "portfolio3.jpg",
-    "portfolio4": "portfolio4.jpg",
-    "portfolio5": "portfolio5.png",
-    "portfolio6": "portfolio6.jpg"
-  },
+  "imagesPreload": [
+    "me-about.png",
+    "me.png",
+    "avatar1.jpg",
+    "avatar2.jpg",
+    "avatar3.jpg",
+    "avatar4.jpg",
+    "portfolio1.jpg",
+    "portfolio2.jpg",
+    "portfolio3.jpg",
+    "portfolio4.jpg",
+    "portfolio5.png",
+    "portfolio6.jpg"
+  ],
   "socials": [
     {
       "iconName": "LinkedIn",
@@ -139,22 +139,22 @@
     "title": "My Journey",
     "timelineCards": [
       {
-        "header": "2022",
+        "date": "2022",
         "title": "Title 1",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
       },
       {
-        "header": "2021",
+        "date": "2021",
         "title": "Title 2",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
       },
       {
-        "header": "2020",
+        "date": "2020",
         "title": "Title 3",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
       },
       {
-        "header": "2019",
+        "date": "2019",
         "title": "Title 4",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
       }
@@ -168,7 +168,7 @@
       {
         "image": "portfolio1.jpg",
         "title": "This is a portfolio Item 1",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "buttons": [
           {
             "title": "GitHub",
@@ -183,7 +183,7 @@
       {
         "image": "portfolio2.jpg",
         "title": "This is a portfolio Item 2",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "buttons": [
           {
             "title": "GitHub",
@@ -198,7 +198,7 @@
       {
         "image": "portfolio3.jpg",
         "title": "This is a portfolio Item 3",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "buttons": [
           {
             "title": "GitHub",
@@ -213,7 +213,7 @@
       {
         "image": "portfolio4.jpg",
         "title": "This is a portfolio Item 4",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "buttons": [
           {
             "title": "GitHub",
@@ -228,7 +228,7 @@
       {
         "image": "portfolio5.png",
         "title": "This is a portfolio Item 5",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "buttons": [
           {
             "title": "GitHub",
@@ -243,7 +243,7 @@
       {
         "image": "portfolio6.jpg",
         "title": "This is a portfolio Item 6",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "buttons": [
           {
             "title": "GitHub",
@@ -289,6 +289,7 @@
     "header": "Get In Touch",
     "title": "Contact Me",
     "mailSubject": "Contact Me Portfolio",
+    "emailKey": "08bc627ccb59602b5627f027ea4a6ace",
     "contactCards": [
       {
         "iconName": "Email",

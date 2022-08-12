@@ -17,7 +17,7 @@ const Timeline: FC<Props> = (props) => {
         <ul>
           {timelineCards.map((card, i) => (
             <li key={`Timeline_${i}`}>
-              <h2 className="timeline__date">{card.header}</h2>
+              <h2 className="timeline__date">{card.date}</h2>
               <h3 className="timeline__title">{card.title}</h3>
               <div className="timeline__descr">{card.description}</div>
             </li>

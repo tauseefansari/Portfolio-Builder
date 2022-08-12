@@ -8,7 +8,8 @@ type Props = {
 };
 
 const Contact: FC<Props> = (props) => {
-  const { id, header, title, contactCards, mailSubject, contactForm, submitBtn } = props.contactObj;
+  const { id, header, title, contactCards, mailSubject, emailKey, contactForm, submitBtn } =
+    props.contactObj;
 
   return (
     <section id={id}>
@@ -21,13 +22,13 @@ const Contact: FC<Props> = (props) => {
               <DynamicIcon iconName={contactCard.iconName} />
               <h4>{contactCard.title}</h4>
               <h5>{contactCard.description}</h5>
-              <a href={contactCard.link.url} rel="noreferrer">
+              <a href={contactCard.link.url} rel="noreferrer" target="_blank">
                 {contactCard.link.title}
               </a>
             </article>
           ))}
         </div>
-        <form data-bss-recipient="08bc627ccb59602b5627f027ea4a6ace" data-bss-subject={mailSubject}>
+        <form data-bss-recipient={emailKey || ''} data-bss-subject={mailSubject || 'Contact Me'}>
           {contactForm.map((contactFormItem, i) =>
             contactFormItem.type === 'textarea' ? (
               <textarea
