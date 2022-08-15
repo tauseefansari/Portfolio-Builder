@@ -2,7 +2,7 @@ name: Auto Deploy CI/CD
 
 on:
   push:
-    branches: [master]
+    branches: [main]
 
 jobs:
   build:
