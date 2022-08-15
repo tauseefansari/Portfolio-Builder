@@ -1,5 +1,5 @@
 {
-  "tabTitle": "It's Tauseef",
+  "tabTitle": "My Portfolio",
   "imagesPreload": [
     "me-about.png",
     "me.png",
@@ -17,23 +17,23 @@
   "socials": [
     {
       "iconName": "LinkedIn",
-      "url": "https://linkedin.com/tauseef-ansari"
+      "url": "https://linkedin.com/your-name"
     },
     {
       "iconName": "GitHub",
-      "url": "https://github.com/tauseefansari"
+      "url": "https://github.com/username"
     },
     {
       "iconName": "Facebook",
-      "url": "https://www.facebook.com/tauseef51"
+      "url": "https://www.facebook.com/username"
     },
     {
       "iconName": "WhatsApp",
-      "url": "https://wa.me/+919321391048"
+      "url": "https://wa.me/+91{mobileNumber}"
     },
     {
       "iconName": "Email",
-      "url": "mailto:tauseeftanvir@gmail.com"
+      "url": "mailto:your-email@email.com"
     }
   ],
   "navigation": {
@@ -73,11 +73,11 @@
   "header": {
     "id": "home",
     "header": "Hello I am",
-    "title": "Tauseef Ansari",
+    "title": "Your Name",
     "subTitle": "React & JS Developer",
     "downloadCVBtn": {
       "title": "My Resume",
-      "url": "https://drive.google.com/file/d/1xEc7P64GXRQKKl8TLaezaNTctptn7tz5/view?usp=sharing"
+      "url": "Resume Link {Drive URL}"
     },
     "letsTalkBtn": { "title": "Let's Talk", "link": "contact" },
     "headerImage": "me.png"
@@ -172,11 +172,11 @@
         "buttons": [
           {
             "title": "GitHub",
-            "url": "https://github.com/tauseefansari"
+            "url": "https://github.com/username"
           },
           {
             "title": "Live Demo",
-            "url": "https://github.com/tauseefansari"
+            "url": "https://github.com/username"
           }
         ]
       },
@@ -187,11 +187,11 @@
         "buttons": [
           {
             "title": "GitHub",
-            "url": "https://github.com/tauseefansari"
+            "url": "https://github.com/username"
           },
           {
             "title": "Live Demo",
-            "url": "https://github.com/tauseefansari"
+            "url": "https://github.com/username"
           }
         ]
       },
@@ -202,11 +202,11 @@
         "buttons": [
           {
             "title": "GitHub",
-            "url": "https://github.com/tauseefansari"
+            "url": "https://github.com/username"
           },
           {
             "title": "Live Demo",
-            "url": "https://github.com/tauseefansari"
+            "url": "https://github.com/username"
           }
         ]
       },
@@ -217,11 +217,11 @@
         "buttons": [
           {
             "title": "GitHub",
-            "url": "https://github.com/tauseefansari"
+            "url": "https://github.com/username"
           },
           {
             "title": "Live Demo",
-            "url": "https://github.com/tauseefansari"
+            "url": "https://github.com/username"
           }
         ]
       },
@@ -232,11 +232,11 @@
         "buttons": [
           {
             "title": "GitHub",
-            "url": "https://github.com/tauseefansari"
+            "url": "https://github.com/username"
           },
           {
             "title": "Live Demo",
-            "url": "https://github.com/tauseefansari"
+            "url": "https://github.com/username"
           }
         ]
       },
@@ -247,11 +247,11 @@
         "buttons": [
           {
             "title": "GitHub",
-            "url": "https://github.com/tauseefansari"
+            "url": "https://github.com/username"
           },
           {
             "title": "Live Demo",
-            "url": "https://github.com/tauseefansari"
+            "url": "https://github.com/username"
           }
         ]
       }
@@ -264,22 +264,22 @@
     "testimonialsCards": [
       {
         "image": "avatar1.jpg",
-        "title": "Rahul Arekar",
+        "title": "Alicia Ciera",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
       },
       {
         "image": "avatar2.jpg",
-        "title": "Tauseef Ansari",
+        "title": "Mike Thompson",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
       },
       {
         "image": "avatar3.jpg",
-        "title": "Mohsin Essani",
+        "title": "John Michel",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
       },
       {
         "image": "avatar4.jpg",
-        "title": "Yash Kunte",
+        "title": "Sussaine Katrine",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
       }
     ]
@@ -289,25 +289,25 @@
     "header": "Get In Touch",
     "title": "Contact Me",
     "mailSubject": "Contact Me Portfolio",
-    "emailKey": "08bc627ccb59602b5627f027ea4a6ace",
+    "emailKey": "{Your email key if there}",
     "contactCards": [
       {
         "iconName": "Email",
         "title": "Email",
-        "description": "tauseeftanvir@gmail.com",
-        "link": { "url": "mailto:tauseeftanvir@gmail.com", "title": "Send a message" }
+        "description": "your-email@email.com",
+        "link": { "url": "mailto:your-email@email.com", "title": "Send a message" }
       },
       {
         "iconName": "Facebook",
         "title": "Messenger",
-        "description": "Tauseef Ansari",
-        "link": { "url": "https://m.me/tauseef51", "title": "Send a message" }
+        "description": "{Messenger Title}",
+        "link": { "url": "https://m.me/username", "title": "Send a message" }
       },
       {
         "iconName": "WhatsApp",
         "title": "WhatsApp",
-        "description": "9321391048",
-        "link": { "url": "https://wa.me/+919321391048", "title": "Send a message" }
+        "description": "{mobile Number}",
+        "link": { "url": "https://wa.me/+91{mobileNubmer}", "title": "Send a message" }
       }
     ],
     "contactForm": [
@@ -328,7 +328,7 @@
   },
   "footer": {
     "id": "footer",
-    "header": "Tauseef Ansari",
+    "header": "Your Name",
     "links": [
       {
         "id": "home",
@@ -359,6 +359,6 @@
         "title": "Contact"
       }
     ],
-    "copyright": "Tauseef Ansari All rights reserved"
+    "copyright": "{Your Name} All rights reserved"
   }
 }

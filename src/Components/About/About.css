@@ -21,6 +21,7 @@
   overflow: hidden;
   transform: rotate(10deg);
   transition: var(--transition);
+  width: 100%;
 }
 
 .about__personal_image:hover {
