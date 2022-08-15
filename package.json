@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://tauseefansari.github.io/portfolio-builder",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.3",
