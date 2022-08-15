@@ -2,7 +2,7 @@ name: AutoDeploy Portfolio Builder
 
 on:
   push:
-    branches: ['main'] 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
+    branches: ['main']
 
 jobs:
   build:
