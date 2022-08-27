@@ -1,3 +1,3 @@
 export const imagePath = (image: string) => {
-  return `./assets/images/${image}`;
+  return `${process.env.PUBLIC_URL}/assets/images/${image}`;
 };

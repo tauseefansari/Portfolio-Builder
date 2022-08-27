@@ -1,7 +1,7 @@
 import { FC } from 'react';
-import DevIcon from '../Common/DevIcon';
-import './Skills.css';
-import { Skills as SkillsProps } from '../../modals/configuration';
+import DevIcon from 'Common/DevIcon';
+import 'Components/Skills/Skills.css';
+import { Skills as SkillsProps } from 'modals/configuration';
 
 type Props = {
   skillsObj: SkillsProps;

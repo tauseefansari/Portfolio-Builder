@@ -1,7 +1,7 @@
 import { FC } from 'react';
-import { imagePath } from '../../Helpers/Helpers';
-import { Portfolio as PortfolioProps } from '../../modals/configuration';
-import './Portfolio.css';
+import { imagePath } from 'Helpers/Helpers';
+import { Portfolio as PortfolioProps } from 'modals/configuration';
+import 'Components/Portfolio/Portfolio.css';
 
 type Props = {
   portfolioObj: PortfolioProps;

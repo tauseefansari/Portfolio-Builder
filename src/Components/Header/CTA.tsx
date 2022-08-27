@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { Link } from 'react-scroll';
-import { LetsTalkBtn, DownloadCvbtn } from '../../modals/configuration';
+import { LetsTalkBtn, DownloadCvbtn } from 'modals/configuration';
 
 type Props = {
   letsTalk: LetsTalkBtn;

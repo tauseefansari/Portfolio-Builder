@@ -1,6 +1,6 @@
 import { FC } from 'react';
-import { Social } from '../../modals/configuration';
-import DynamicIcon from '../Common/DynamicIcon';
+import { Social } from 'modals/configuration';
+import DynamicIcon from 'Common/DynamicIcon';
 
 type Props = {
   socials: Social[];

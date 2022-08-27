@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { Configuration } from '../modals/configuration';
+import { Configuration } from 'modals/configuration';
 
 type State = {
   configuration: Configuration;

@@ -1,8 +1,8 @@
 import { FC, useLayoutEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { setLoader } from '../../redux/configurationSlice';
-import { RootState } from '../../redux/store';
-import { imagePath } from '../../Helpers/Helpers';
+import { setLoader } from 'redux/configurationSlice';
+import { RootState } from 'redux/store';
+import { imagePath } from 'Helpers/Helpers';
 
 const PreloadAssets: FC = () => {
   const configuration = useSelector((state: RootState) => state.config.configuration);

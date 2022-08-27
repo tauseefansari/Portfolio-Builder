@@ -5,9 +5,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
-import './Testimonials.css';
-import { Testimonials as TestimonialsProps } from '../../modals/configuration';
-import { imagePath } from '../../Helpers/Helpers';
+import 'Components/Testimonials/Testimonials.css';
+import { Testimonials as TestimonialsProps } from 'modals/configuration';
+import { imagePath } from 'Helpers/Helpers';
 
 type Props = {
   testimonialsObj: TestimonialsProps;

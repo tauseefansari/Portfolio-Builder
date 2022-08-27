@@ -1,7 +1,7 @@
 import { FC } from 'react';
-import './Contact.css';
-import { Contact as ContactProps } from '../../modals/configuration';
-import DynamicIcon from '../Common/DynamicIcon';
+import 'Components/Contact/Contact.css';
+import { Contact as ContactProps } from 'modals/configuration';
+import DynamicIcon from 'Common/DynamicIcon';
 
 type Props = {
   contactObj: ContactProps;

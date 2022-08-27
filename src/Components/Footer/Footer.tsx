@@ -1,8 +1,8 @@
 import { FC } from 'react';
 import { Link } from 'react-scroll';
-import { Footer as FooterProps, Social } from '../../modals/configuration';
-import DynamicIcon from '../Common/DynamicIcon';
-import './Footer.css';
+import { Footer as FooterProps, Social } from 'modals/configuration';
+import DynamicIcon from 'Common/DynamicIcon';
+import 'Components/Footer/Footer.css';
 
 type Props = {
   footerObj: FooterProps;

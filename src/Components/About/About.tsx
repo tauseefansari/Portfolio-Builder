@@ -1,9 +1,9 @@
 import { FC } from 'react';
-import './About.css';
+import 'Components/About/About.css';
 import { Link } from 'react-scroll';
-import { imagePath } from '../../Helpers/Helpers';
-import DynamicIcon from '../Common/DynamicIcon';
-import { About as AboutProps, LetsTalkBtn } from '../../modals/configuration';
+import { imagePath } from 'Helpers/Helpers';
+import DynamicIcon from 'Common/DynamicIcon';
+import { About as AboutProps, LetsTalkBtn } from 'modals/configuration';
 
 type Props = {
   aboutObj: AboutProps;

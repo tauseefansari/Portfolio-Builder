@@ -1,10 +1,10 @@
 import { FC } from 'react';
 import CTA from './CTA';
-import HeaderSocial from './HeaderSocial';
+import HeaderSocial from 'Components/Header/HeaderSocial';
 import { Link } from 'react-scroll';
-import './Header.css';
-import { imagePath } from '../../Helpers/Helpers';
-import { Header as HeaderProps, Social } from '../../modals/configuration';
+import { imagePath } from 'Helpers/Helpers';
+import { Header as HeaderProps, Social } from 'modals/configuration';
+import 'Components/Header/Header.css';
 
 type Props = {
   headerObj: HeaderProps;

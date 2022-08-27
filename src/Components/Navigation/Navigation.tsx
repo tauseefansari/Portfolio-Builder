@@ -1,8 +1,8 @@
 import { FC } from 'react';
 import { Link } from 'react-scroll';
-import { Navigation as NavigationProps } from '../../modals/configuration';
-import DynamicIcon from '../Common/DynamicIcon';
-import './Navigation.css';
+import { Navigation as NavigationProps } from 'modals/configuration';
+import DynamicIcon from 'Common/DynamicIcon';
+import 'Components/Navigation/Navigation.css';
 
 type Props = {
   navigationObj: NavigationProps;

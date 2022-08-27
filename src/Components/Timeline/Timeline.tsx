@@ -1,6 +1,6 @@
 import { FC } from 'react';
-import { Timeline as TimelineProps } from '../../modals/configuration';
-import './Timeline.css';
+import { Timeline as TimelineProps } from 'modals/configuration';
+import 'Components/Timeline/Timeline.css';
 
 type Props = {
   timelineObj: TimelineProps;

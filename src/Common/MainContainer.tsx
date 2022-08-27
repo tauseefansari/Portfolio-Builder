@@ -1,15 +1,15 @@
 import { FC } from 'react';
-import Header from '../Header/Header';
-import Navigation from '../Navigation/Navigation';
-import About from '../About/About';
-import Skills from '../Skills/Skills';
-import Timeline from '../Timeline/Timeline';
-import Portfolio from '../Portfolio/Portfolio';
-import Testimonials from '../Testimonials/Testimonials';
-import Contact from '../Contact/Contact';
-import Footer from '../Footer/Footer';
+import Header from 'Components/Header/Header';
+import Navigation from 'Components/Navigation/Navigation';
+import About from 'Components/About/About';
+import Skills from 'Components/Skills/Skills';
+import Timeline from 'Components/Timeline/Timeline';
+import Portfolio from 'Components/Portfolio/Portfolio';
+import Testimonials from 'Components/Testimonials/Testimonials';
+import Contact from 'Components/Contact/Contact';
+import Footer from 'Components/Footer/Footer';
 import { useSelector } from 'react-redux';
-import { RootState } from '../../redux/store';
+import { RootState } from 'redux/store';
 
 const MainContainer: FC = () => {
   const configuration = useSelector((state: RootState) => state.config.configuration);
