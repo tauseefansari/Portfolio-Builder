@@ -1,5 +1,2 @@
-# Portfolio
- Personal Portfolio Website
-
-# Testing
-[Portfolio](https://portfolio-tauseef.netlify.app/)
+# Portfolio Builder 
+ A simple configuration that turns out into a beautiful portfolio.
