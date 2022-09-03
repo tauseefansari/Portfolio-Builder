@@ -20,26 +20,57 @@
 
 </div>
 
-## Demo link:
+## Demo link 🔗
 
 Access my site at [link](https://tauseefansari.github.io/Portfolio-Builder)
 
-## Report bugs
+## Configuration ⚙️
+[Configuration](https://github.com/tauseefansari/Portfolio-Builder/blob/main/public/json/Configuration.json) is a `json` file which contains all the configuration of portfolio. Any changes in configuration will reload the portfolio if project is running. Feel free to customize the `json` as per your need.
+
+> **Note:** Make sure the format of `json` file is proper. There should not be any error in `json`
+
+
+<details>
+<summary>Tab / Project Title <strong>(Optional)</strong> ⚠️</summary>
+
+### Tab / Project Title:
+`tabTitle` is an `optional` field and is used to set Tab Tile if no `tabTable` is provided it's default to `Portfolio`
+
+Field | Type | Example
+--- | --- | --- 
+`tabTitle?`  | string | `tabTile: 'Tauseef Ansari'`
+
+</details>
+
+<details>
+<summary>Images Preload <strong>(Mandatory)</strong> ⛔</summary>
+
+### Images Preload:
+ `imagesPreload` is a `mandatory` field of type `string[]` which contains names of all the images with extension which you want to preload before project run. 
+> **Note:** Make sure all the images should be in the [images](https://github.com/tauseefansari/Portfolio-Builder/tree/main/public%2Fassets%2Fimages) folder
+
+Field | Type | Example
+--- | --- | --- 
+`imagesPreload`  | `string[]` | ```imagesPreload: ['my-image.png']```
+
+</details>
+
+## Report bugs 🐛
 
 - Use GitHub issues to track public bugs. Report a bug by [opening a new issue](https://github.com/tauseefansari/Portfolio-Builder/issues/new)
 
-## New Contribution
+## New Contribution ⚒️
 
 1. Fork it 🍴
 2. Add code that you want to edit . 👨‍💻
 3. push to your github and request a pull request to main. 🙋
 
-## Contributors:
+## Contributors 👥
 
 <a href="https://github.com/tauseefansari/Portfolio-Builder/graphs/contributors">
 <img src="https://contrib.rocks/image?repo=tauseefansari/Portfolio-Builder" />
 </a>
 
-## License
+## License 🪪
 
 MIT license @ [Tauseef Ansari](https://github.com/tauseefansari/Portfolio-Builder/blob/main/LICENSE.md)
