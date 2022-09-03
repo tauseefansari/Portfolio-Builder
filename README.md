@@ -36,7 +36,9 @@ Access my site at [link](https://tauseefansari.github.io/Portfolio-Builder)
 
 ## Contributors:
 
-- [Tauseef Ansari](https://github.com/tauseefansari)
+<a href="https://github.com/tauseefansari/Portfolio-Builder/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=tauseefansari/Portfolio-Builder" />
+</a>
 
 ## License
 
