@@ -2,7 +2,7 @@
 <img src=".github/logo.png"/>
   <br/>
 <h1> Portfolio Builder </h1>
- A simple configuration that turns out into a beautiful portfolio
+A simple configuration that turns out into a beautiful portfolio
   <br/>
   <br/>
 
@@ -20,9 +20,44 @@
 
 </div>
 
-## Demo link 🔗
+## Table of Content 📝
+- [Demo Link](#demo-link-)
+- [Running Locally](#running-locally-)
+- [Configuration](#configuration-%EF%B8%8F)
+- [Report Bugs](#report-bugs-)
+- [Contribution Guidelines](#contribution-guidelines-%EF%B8%8F)
+- [Contributors](#contributors-)
+- [Licence](#license-)
+
+## Demo Link 🔗
 
 Access my site at [link](https://tauseefansari.github.io/Portfolio-Builder)
+
+## Running Locally 💻
+
+Clone the project
+
+```bash
+  git clone https://github.com/tauseefansari/Portfolio-Builder
+```
+
+Go to the project directory
+
+```bash
+  cd Portfolio-Builder
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm start
+```
 
 ## Configuration ⚙️
 [Configuration](https://github.com/tauseefansari/Portfolio-Builder/blob/main/public/json/Configuration.json) is a `json` file which contains all the configuration of portfolio. Any changes in configuration will reload the portfolio if project is running. Feel free to customize the `json` as per your need.
@@ -55,15 +90,15 @@ Field | Type | Example
 
 </details>
 
-## Report bugs 🐛
+## Report Bugs 🐛
 
 - Use GitHub issues to track public bugs. Report a bug by [opening a new issue](https://github.com/tauseefansari/Portfolio-Builder/issues/new)
 
-## New Contribution ⚒️
+## Contribution Guidelines ⚒️
 
 1. Fork it 🍴
-2. Add code that you want to edit . 👨‍💻
-3. push to your github and request a pull request to main. 🙋
+2. Add code that you want to edit 👨‍💻
+3. Push to your github and request a pull request to `main` 🙋
 
 ## Contributors 👥
 
