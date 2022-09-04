@@ -73,7 +73,7 @@ Start the server
 
 Field | Type | Example
 --- | --- | --- 
-`tabTitle?`  | string | `tabTile: 'Tauseef Ansari'`
+`tabTitle?`  | `string` | `tabTile: 'Tauseef Ansari'`
 
 </details>
 
@@ -88,6 +88,43 @@ Field | Type | Example
 --- | --- | --- 
 `imagesPreload`  | `string[]` | ```imagesPreload: ['my-image.png']```
 
+</details>
+
+<details>
+<summary>Social Links<strong>(Mandatory)</strong> ⛔</summary>
+
+### Social Links:
+`social` is a `mandatory` field of type `Social[]` where each `Social` is of type 
+```
+{ 
+  iconName: 'MUI Icon Name', 
+  url: 'string' 
+}
+```
+here `iconName` is an any icon name from [MUI Icon](https://mui.com/material-ui/material-icons/) and `url` is the actual URL
+
+Field | Type | Example
+--- | --- | --- 
+`social`  | `Social[]` | `[{ iconName: 'Github', url: 'https://github.com/tauseefansari'}]`
+</details>
+
+<details>
+<summary>Navigation <strong>(Mandatory)</strong> ⛔</summary>
+
+### Navigation:
+`navigation` is a `mandatory` field of type `Links[]` where each `Link` is of type 
+```
+{
+  id: 'string',
+  title: 'string',
+  iconName: 'MUI Icon Name'
+}
+```
+here `id` is the id of sections like `home`, `timeline` etc. so when you click on navigation it will smoothly move down to the desired section, `title` is a tooltip title which shows only on large screen devices and `iconName` is an any icon name from [MUI Icon](https://mui.com/material-ui/material-icons/)
+
+Field | Type | Example
+--- | --- | --- 
+`navigaton`  | `Links[]` | `[{ id: 'home', title: 'Home', iconName: 'HomeOutlined'}]`
 </details>
 
 ## Report Bugs 🐛
