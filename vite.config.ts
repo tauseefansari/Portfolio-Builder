@@ -5,6 +5,7 @@ import svgrPlugin from 'vite-plugin-svgr';
 
 export default defineConfig({
   plugins: [react(), viteTsconfigPaths(), svgrPlugin()],
+  base: '/Portfolio-Builder/',
   test: {
     globals: true,
     environment: 'jsdom',
