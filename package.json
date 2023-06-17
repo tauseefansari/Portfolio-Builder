@@ -4,11 +4,12 @@
   "homepage": ".",
   "private": true,
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "start": "vite",
     "build": "tsc && vite build",
     "serve": "vite preview",
     "test": "vitest",
-    "predeploy": "npm run build",
+    "predeploy": "pnpm build",
     "deploy": "gh-pages -d build"
   },
   "dependencies": {

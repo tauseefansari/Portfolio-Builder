@@ -20,51 +20,52 @@
  
  </div>
 
- ## Table of Content 📝
- - [Demo Link](#demo-link-)
- - [Running Locally](#running-locally-)
- - [Configuration](#configuration-%EF%B8%8F)
- - [Report Bugs](#report-bugs-)
- - [Contribution Guidelines](#contribution-guidelines-%EF%B8%8F)
- - [Contributors](#contributors-)
- - [Licence](#license-)
- 
- ## Demo Link 🔗
- 
- Access my site at [link](https://tauseefansari.github.io/Portfolio-Builder)
- 
- ## Running Locally 💻
- 
- Clone the project
- 
- ```bash
-   git clone https://github.com/tauseefansari/Portfolio-Builder
- ```
- 
- Go to the project directory
- 
- ```bash
-   cd Portfolio-Builder
- ```
- 
- Install dependencies
- 
- ```bash
-   npm install
- ```
- 
- Start the server
- 
- ```bash
-   npm start
- ```
+## Table of Content 📝
 
- ## Configuration ⚙️
- [Configuration](https://github.com/tauseefansari/Portfolio-Builder/blob/main/public/json/Configuration.json) is a `json` file which contains all the configuration of portfolio. Any changes in configuration will reload the portfolio if project is running. Feel free to customize the `json` as per your need.
- 
- > **Note:** Make sure the format of `json` file is proper. There should not be any error in `json`. Feel free to take a look at my own [Configuration](https://github.com/tauseefansari/tauseefansari.github.io/blob/code/public/json/Configuration.json) just avoid using `emailKey` because then all your emails will be redirect to my email. If you want you can generate you own emailKey using [BootStrap Studio Pro](https://bootstrapstudio.io/) 
- 
- 
+- [Demo Link](#demo-link-)
+- [Running Locally](#running-locally-)
+- [Configuration](#configuration-%EF%B8%8F)
+- [Report Bugs](#report-bugs-)
+- [Contribution Guidelines](#contribution-guidelines-%EF%B8%8F)
+- [Contributors](#contributors-)
+- [Licence](#license-)
+
+## Demo Link 🔗
+
+Access my site at [link](https://tauseefansari.github.io/Portfolio-Builder)
+
+## Running Locally 💻
+
+Clone the project
+
+```bash
+  git clone https://github.com/tauseefansari/Portfolio-Builder
+```
+
+Go to the project directory
+
+```bash
+  cd Portfolio-Builder
+```
+
+Install dependencies
+
+```bash
+  pnpm install
+```
+
+Start the server
+
+```bash
+  pnpm start
+```
+
+## Configuration ⚙️
+
+[Configuration](https://github.com/tauseefansari/Portfolio-Builder/blob/main/public/json/Configuration.json) is a `json` file which contains all the configuration of portfolio. Any changes in configuration will reload the portfolio if project is running. Feel free to customize the `json` as per your need.
+
+> **Note:** Make sure the format of `json` file is proper. There should not be any error in `json`. Feel free to take a look at my own [Configuration](https://github.com/tauseefansari/tauseefansari.github.io/blob/code/public/json/Configuration.json) just avoid using `emailKey` because then all your emails will be redirect to my email. If you want you can generate you own emailKey using [BootStrap Studio Pro](https://bootstrapstudio.io/)
+
  <details>
  <summary>Tab / Project Title <strong>(Optional)</strong> ⚠️</summary>
  
@@ -374,17 +375,18 @@
  `footer`  | `object` | <pre><code>{ <br/>   id: 'footer', <br/>   header: 'Tauseef Ansari', <br/>   links: [ <br/>     { <br/>        id: 'home', <br/>        title: 'Home' <br/>      } <br/>   ], <br/>   copyright: 'Tauseef Ansari: All rights reserved'<br/>} </code></pre>
  </details>
 
- ## Report Bugs 🐛
-  Use GitHub issues to track public bugs. Report a bug by [opening a new issue](https://github.com/tauseefansari/Portfolio-Builder/issues/new)
- 
- ## Contribution Guidelines ⚒️
- 
- 1. Fork it 🍴
- 2. Add code that you want to edit 👨‍💻
- 3. Push to your github and request a pull request to `main` 🙋
- 
- ## Contributors 👥
- 
+## Report Bugs 🐛
+
+Use GitHub issues to track public bugs. Report a bug by [opening a new issue](https://github.com/tauseefansari/Portfolio-Builder/issues/new)
+
+## Contribution Guidelines ⚒️
+
+1.  Fork it 🍴
+2.  Add code that you want to edit 👨‍💻
+3.  Push to your github and request a pull request to `main` 🙋
+
+## Contributors 👥
+
  <a href="https://github.com/tauseefansari/Portfolio-Builder/graphs/contributors">
  <img src="https://contrib.rocks/image?repo=tauseefansari/Portfolio-Builder" />
  </a>
