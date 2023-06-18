@@ -1,2 +1,25 @@
-# Auto detect text files and perform LF normalization
+# Set the line ending normalization
 * text=auto
+
+# Ignore whitespace differences in certain file types
+*.css     diff=css
+*.html    diff=html
+*.json    diff=json
+*.md      diff=md
+*.scss    diff=scss
+*.ts      diff=typescript
+*.tsx     diff=typescript
+*.yml     diff=yaml
+
+# Treat specific file types as binary to avoid line-ending conversions
+*.png     binary
+*.jpg     binary
+*.jpeg    binary
+*.gif     binary
+*.ico     binary
+*.woff    binary
+*.woff2   binary
+*.eot     binary
+*.ttf     binary
+*.otf     binary
+*.pdf     binary
