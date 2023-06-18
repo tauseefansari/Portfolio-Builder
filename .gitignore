@@ -1,15 +1,21 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
-
-# dependencies
+# Node.js
 /node_modules
+.pnpm/
+.pnpm-debug.log/*
+pnpm-lock.yaml
 
-# testing
-/coverage
+# Build Output
+build/
 
-# production
-/build
+# IDEs
+.idea/
+.vscode/
+*.code-workspace
 
-# misc
+# Miscellaneous
 .DS_Store
 .env
-npm-debug.log
+Thumbs.db
+
+# Vite
+.vitest/

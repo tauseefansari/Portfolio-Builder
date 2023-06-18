@@ -1,3 +1,6 @@
+import { PROJECT_NAME } from 'Helpers/constants';
+
 export const imagePath = (image: string) => {
-  return `/assets/images/${image}`;
+  const env = import.meta.env.PROD ? `${PROJECT_NAME}` : '';
+  return `${env}/assets/images/${image}`;
 };
