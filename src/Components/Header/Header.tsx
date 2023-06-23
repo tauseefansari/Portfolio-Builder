@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import CTA from './CTA';
+import CTA from 'Components/Header/CTA';
 import HeaderSocial from 'Components/Header/HeaderSocial';
 import { Link } from 'react-scroll';
 import { imagePath } from 'Helpers/Helpers';
