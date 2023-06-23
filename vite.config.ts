@@ -10,7 +10,6 @@ export default defineConfig(({ command }) => {
     plugins: [react(), viteTsconfigPaths(), svgrPlugin()],
     base,
     assetsInclude: ["/assets/**/*"],
-    assetsPublicPath: base,
     test: {
       globals: true,
       environment: "jsdom",

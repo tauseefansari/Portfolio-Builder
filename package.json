@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": ".",
+  "homepage": "https://tauseefansari.github.io/Portfolio-Builder/",
   "private": true,
   "scripts": {
     "preinstall": "npx only-allow pnpm",
