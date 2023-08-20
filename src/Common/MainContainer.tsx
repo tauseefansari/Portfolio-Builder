@@ -8,11 +8,11 @@ import Portfolio from 'Components/Portfolio/Portfolio';
 import Testimonials from 'Components/Testimonials/Testimonials';
 import Contact from 'Components/Contact/Contact';
 import Footer from 'Components/Footer/Footer';
-import { useSelector } from 'react-redux';
-import { RootState } from 'redux/store';
+import { useAppSelector } from 'redux/hooks';
+import { selectConfiguration } from 'redux/configurationSlice';
 
 const MainContainer: FC = () => {
-  const configuration = useSelector((state: RootState) => state.config.configuration);
+  const configuration = useAppSelector(selectConfiguration)
   const {
     header,
     socials,

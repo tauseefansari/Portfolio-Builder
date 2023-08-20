@@ -1,14 +1,13 @@
 import { FC, useLayoutEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { setLoader } from 'redux/configurationSlice';
-import { RootState } from 'redux/store';
+import { selectConfiguration, setLoader } from 'redux/configurationSlice';
 import { imagePath } from 'Helpers/Helpers';
+import { useAppDispatch, useAppSelector } from 'redux/hooks';
 
 const PreloadAssets: FC = () => {
-  const configuration = useSelector((state: RootState) => state.config.configuration);
+  const configuration = useAppSelector(selectConfiguration);
   const { imagesPreload } = configuration;
   const [loading, setLoading] = useState(true);
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
 
   useLayoutEffect(() => {
     const images: HTMLImageElement[] = [];

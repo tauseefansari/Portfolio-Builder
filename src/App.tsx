@@ -1,14 +1,14 @@
 import { FC } from 'react';
-import { useSelector } from 'react-redux';
 import Loader from 'Common/Loader';
 import PreloadAssets from 'Common/PreloadAssets';
-import useConfiguration from 'hooks/use-configuration';
-import { RootState } from 'redux/store';
+import useConfiguration from 'hooks/useConfiguration';
 import MainContainer from 'Common/MainContainer';
+import { useAppSelector } from 'redux/hooks';
+import { selectIsLoading } from 'redux/configurationSlice';
 
 const App: FC = () => {
   const configLoaded = useConfiguration();
-  const loading = useSelector((state: RootState) => state.config.loading);
+  const loading = useAppSelector(selectIsLoading);
 
   return loading ? (
     <>

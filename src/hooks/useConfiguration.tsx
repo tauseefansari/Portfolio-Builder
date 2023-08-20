@@ -1,10 +1,10 @@
 import { useLayoutEffect, useState } from 'react';
-import { useDispatch } from 'react-redux';
 import { LOCATIONS } from 'Helpers/constants';
 import { setConfiguration } from 'redux/configurationSlice';
+import { useAppDispatch } from 'redux/hooks';
 
 const useConfiguration = () => {
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
   const [configLoaded, setConfigLoaded] = useState(false);
 
   useLayoutEffect(() => {
